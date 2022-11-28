@@ -11,8 +11,8 @@ document.onmousemove = function(e) {
     var x = e.pageX;
     var y = e.pageY;
 
-    dragValue.style.left = x + "px";
-    dragValue.style.top = y + "px";
+    dragValue.style.left = x - thing.offsetWidth / 2 + "px";
+    dragValue.style.top = y - thing.offsetHeight / 2 + "px";
 
 }
 
