@@ -33,7 +33,7 @@ function startGame() {
                 document.removeEventListener('mousemove', onMouseMove);
                 myGamePiece.onmouseup = null;
             }
-            myGamePiece.ondragstart - function() {
+            myGamePiece.ondragstart = function() {
                 return false;
             }
         }
