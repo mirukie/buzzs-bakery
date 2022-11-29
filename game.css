@@ -5,7 +5,9 @@
     background-color:lavender
 }
 
-
+.title {
+    text-align: center;
+}
 
 /* canvas {
     border: 1px solid #d3d3d3;
