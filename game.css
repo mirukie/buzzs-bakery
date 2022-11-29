@@ -4,11 +4,13 @@
 .title {
     text-align: center;
     font-family: 'Fredoka One';
+    font-size: 50px;
 }
 
 .text {
     text-align: center;
     font-family: 'Fredoka One';
+    font-size: 25px;
 }
 
 .avatar {
