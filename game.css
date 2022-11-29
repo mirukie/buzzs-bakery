@@ -14,7 +14,7 @@
     font-size: 25px;
 }
 
-.button {
+.buttonCenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -27,4 +27,12 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.button {
+    opacity: 100%;
+}
+
+.button:hover {
+    opacity: 75%;
 }
