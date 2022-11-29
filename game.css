@@ -14,6 +14,14 @@
     font-size: 25px;
 }
 
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 265px;
+    height: 100px;
+}
+
 .avatar {
     vertical-align: middle;
     width: 50px;
