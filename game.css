@@ -22,6 +22,12 @@
     height: 100px;
 }
 
+.imageCenter {
+    height: 788px;
+    width: 1515px;
+  }
+  
+
 .avatar {
     vertical-align: middle;
     width: 50px;
