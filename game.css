@@ -22,6 +22,12 @@
     height: 100px;
 }
 
+.imageCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .containerbkgd {
     position: absolute;
     top: 0px;
