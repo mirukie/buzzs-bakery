@@ -16,12 +16,6 @@ function moveSelection(evt) {
         case 39:
         rightArrowPressed();
         break;
-        case 38:
-        upArrowPressed();
-        break;
-        case 40:
-        downArrowPressed();
-        break;
         }
     };
 
