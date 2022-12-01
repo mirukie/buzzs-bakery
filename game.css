@@ -30,28 +30,12 @@
     left: 0px;
 }
 
-.containergrid {
-    justify-self: center;
-}
-
 .clouds {
     background-image: url("assets/bkgd.PNG");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.imagecenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-  }
-  
-/* currently not in use. can delete later */
-.imageCenter {
-    height: 788px;
-    width: 1515px;
-}
 /* responsive button imgs */
 .responsive {
     width: 50%;
@@ -78,6 +62,7 @@
     grid-template-columns: 50% 50%;
     margin: 2rem;
     align-items: center;
+    height: 90%;
 }
 
 
