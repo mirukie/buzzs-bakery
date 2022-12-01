@@ -40,8 +40,12 @@
 .imageCenter {
     height: 788px;
     width: 1515px;
-  }
-  
+}
+/* responsive button imgs */
+.responsive {
+    width: 50%;
+    height: auto;
+}
 
 .avatar {
     vertical-align: middle;
@@ -50,10 +54,10 @@
     border-radius: 50%;
 }
 
-.button {
+.buttonHover {
     opacity: 100%;
 }
 
-.button:hover {
+.buttonHover:hover {
     opacity: 70%;
 }
