@@ -16,7 +16,6 @@ function moveSelection(evt) {
         case 39:
         rightArrowPressed();
         break;
-        
         }
     };
 
