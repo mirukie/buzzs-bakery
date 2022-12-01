@@ -43,6 +43,12 @@
     background-repeat: no-repeat;
 }
 
+.tutbkgd {
+    background-image: url("assets/tutorialbkgd.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* responsive button imgs */
 .responsive {
     width: 50%;
