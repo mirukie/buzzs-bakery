@@ -22,6 +22,12 @@
     height: 100px;
 }
 
+.imageCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .containerbkgd {
     position: absolute;
     top: 0px;
@@ -63,6 +69,7 @@
 .buttonHover:hover {
     opacity: 70%;
 }
+
 
 .wrapper {
     display: grid;
