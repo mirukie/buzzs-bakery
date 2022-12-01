@@ -22,13 +22,15 @@
     height: 100px;
 }
 
-.clouds {
+.containerbkgd {
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+}
 
+.clouds {
     background-image: url("assets/bkgd.PNG");
     background-size: cover;
     background-repeat: no-repeat;
