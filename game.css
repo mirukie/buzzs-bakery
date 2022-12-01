@@ -30,15 +30,21 @@
     left: 0px;
 }
 
+.containergrid {
+    justify-self: center;
+}
+
 .clouds {
     background-image: url("assets/bkgd.PNG");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.imageCenter {
-    height: 788px;
-    width: 1515px;
+.imagecenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
   }
   
 
@@ -56,3 +62,14 @@
 .button:hover {
     opacity: 70%;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2rem;
+    align-items: center;
+}
+
+
+
+
