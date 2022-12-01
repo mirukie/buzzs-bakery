@@ -1,11 +1,11 @@
+function leftArrowPressed() {
+    var element = document.getElementById("image1");
+    element.style.left = parseInt(element.style.left) - 20 + 'px';
+}
+
 function rightArrowPressed() {
     var element = document.getElementById("image1");
     element.style.left = parseInt(element.style.left) + 20 + 'px';
-}
-
-function downArrowPressed() {
-    var element = document.getElementById("image1");
-    element.style.top = parseInt(element.style.top) + 20 + 'px';
 }
 
 function moveSelection(evt) {
