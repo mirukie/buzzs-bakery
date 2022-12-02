@@ -55,6 +55,21 @@
     background-repeat: no-repeat;
 }
 
+.menubkgd {
+    background-image: url("assets/menu.PNG")
+    height: 850px;
+    width: 650px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.haloHaloIcon {
+    position: relative;
+    width: 650px;
+    height: 500px;
+}
+
 /* responsive button imgs */
 .responsive {
     width: 50%;

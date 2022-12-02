@@ -1,4 +1,5 @@
 var dragValue;
+var totalPts;
 
 function move(id) {
     var element = document.getElementById("thing");
@@ -7,6 +8,7 @@ function move(id) {
         dragValue = element;
     }
 }
+
 document.onmousemove = function(e) {
     var x = e.pageX;
     var y = e.pageY;
