@@ -112,7 +112,6 @@ h1 {
     align-items: center;
     margin: 20px;
     top: -120px;
-
 }
 
 .drop-targets {
@@ -149,7 +148,7 @@ h1 {
     height: 75px;
     width: 75px;
     background-color: #F0DB4F;
-
+    
 }
 
 .hide {
