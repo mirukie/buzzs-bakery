@@ -11,7 +11,7 @@
 .text {
     text-align: center;
     font-family: 'Fredoka One';
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .smallText {
@@ -56,16 +56,20 @@
 }
 
 .menubkgd {
-    background-image: url("assets/menu.PNG")
+    /* background-image: url("assets/menu.PNG"); */
     height: 850px;
     width: 650px;
     position: absolute;
-    margin-left: auto;
+    top: -150px;
+    margin-left: 425px;
     margin-right: auto;
 }
 
 .haloHaloIcon {
     position: relative;
+    margin-left: 550px;
+    margin-right: auto;
+    margin-top: -60px;
     width: 650px;
     height: 500px;
 }
