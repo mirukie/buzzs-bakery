@@ -11,7 +11,7 @@
 .text {
     text-align: center;
     font-family: 'Fredoka One';
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .smallText {
@@ -161,4 +161,10 @@ h1 {
 
 .hide {
     display: none;
+}
+
+.image {
+    height: 256px;
+    width: 256px;
+    background: url(/assets/steps/step1.PNG) 0px 0px;
 }
