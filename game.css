@@ -94,12 +94,6 @@
     border: 4px solid #FDCED3;
 }
 
-test {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 h1 {
     color: #323330;
 }
@@ -111,7 +105,7 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 20px;
-    top: 120px;
+    top: -120px;
 }
 
 .drop-targets {
