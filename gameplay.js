@@ -35,7 +35,7 @@ function docReady() {
 
 
     /* drop targets */
-    const boxes = document.querySelectorAll('.box');
+    const boxes = document.querySelectorAll('.squareBox');
 
     boxes.forEach(box => {
         box.addEventListener('dragenter', dragEnter)
