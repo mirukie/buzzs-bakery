@@ -5,8 +5,8 @@ var step = 1;
 var playerImg = "assets/steps/step" + step + ".png"
 
 function startgame() {
-    player = new component(125, 275, playerImg, window.innerWidth * 0.5 - 62.5, window.innerHeight * 0.6, "image");
-    counter = new component(window.innerWidth, 1, "transparent", 0, window.innerHeight * 0.9);
+    player = new component(125, 275, playerImg, window.innerWidth * 0.5 - 62, window.innerHeight * 0.6, "image");
+    //counter = new component(window.innerWidth, 1, "transparent", 0, window.innerHeight * 0.9);
     gameArea.start();
 }
 
@@ -88,11 +88,6 @@ function component(width, height, color, x, y, type) {
 function updateGameArea() {
     var x;
     for (i = 0; i < topping.length; i += 1) {
-        if (counter.touchWith(topping[i])) {
-            topping.shift();
-            alert("HAHA MAJOR L (add game over + retry graphic here)");
-            location.reload();
-        }
         if (player.touchWith(topping[i])) {
             topping.shift();
             if (step < 10) {
@@ -101,6 +96,11 @@ function updateGameArea() {
                 player.image.src = playerImg;
             }
         }
+        /*if (counter.touchWith(topping[i])) {
+            topping.shift();
+            alert("HAHA MAJOR L (add game over + retry graphic here)");
+            location.reload();
+        }*/
         if (step >= 10) {
             setTimeout(() => {
                 alert("add level complete graphic here!");
@@ -112,7 +112,7 @@ function updateGameArea() {
     gameArea.clear();
     gameArea.frameNo += 1;
     if (gameArea.frameNo == 1 || everyinterval(69)) {
-        if (dropped < 10) {
+        if (dropped < 9) {
             dropped++;
             x = (window.innerWidth / 2) + ((Math.random() - 0.5) * 690);
             topping.push(new component(120, 80, "/assets/toppings/" + dropped + ".PNG", x, -420, "image"));
