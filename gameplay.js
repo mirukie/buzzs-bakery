@@ -1,15 +1,12 @@
 var player;
 var topping = [];
-
-var stepsCycle = ["assets/steps/step1.PNG", "assets/steps/step2.PNG", "assets/steps/step3.PNG", "assets/steps/step4.PNG",
-                "assets/steps/step5.PNG", "assets/steps/step6.PNG", "assets/steps/step7.PNG", "assets/steps/step8.PNG", 
-                "assets/steps/step9.PNG", "assets/steps/step10.PNG"]
-
+var dropped = 0;
 var step = 1;
 var playerImg = "assets/steps/step" + step + ".png"
 
 function startgame() {
-    player = new component(125, 275, playerImg, 610, 580, "image");
+    player = new component(125, 275, playerImg, window.innerWidth * 0.5, window.innerHeight * 0.6, "image");
+    counter = new component();
     gameArea.start();
 }
 
@@ -107,8 +104,9 @@ function updateGameArea() {
     
     gameArea.clear();
     gameArea.frameNo += 1;
-    if (gameArea.frameNo == 1 || everyinterval(69)) {
-        x = 400 + Math.random() * 400;
+    if (dropped < 10 && gameArea.frameNo == 1 || everyinterval(69)) {
+        dropped++;
+        x = (window.innerWidth / 2) + ((Math.random() - 0.5) * 690);
         topping.push(new component(100, 60, "/assets/toppings/icecream.PNG", x, -150, "image"));
     }
     for (i = 0; i < topping.length; i += 1) {
