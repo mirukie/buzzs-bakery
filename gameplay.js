@@ -107,7 +107,7 @@ function updateGameArea() {
     if (dropped < 10 && gameArea.frameNo == 1 || everyinterval(69)) {
         dropped++;
         x = (window.innerWidth / 2) + ((Math.random() - 0.5) * 690);
-        topping.push(new component(100, 60, "/assets/toppings/icecream.PNG", x, -150, "image"));
+        topping.push(new component(100, 60, "/assets/toppings/1_ice.PNG", x, -150, "image"));
     }
     for (i = 0; i < topping.length; i += 1) {
         topping[i].y += 6.9;
