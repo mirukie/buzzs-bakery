@@ -6,7 +6,7 @@ var playerImg = "assets/steps/step" + step + ".png"
 
 function startgame() {
     player = new component(125, 275, playerImg, window.innerWidth * 0.5 - 62, window.innerHeight * 0.6, "image");
-    //counter = new component(window.innerWidth, 1, "transparent", 0, window.innerHeight * 0.9);
+    counter = new component(window.innerWidth, 1, "transparent", 0, window.innerHeight * 0.9);
     gameArea.start();
 }
 
@@ -96,11 +96,11 @@ function updateGameArea() {
                 player.image.src = playerImg;
             }
         }
-        /*if (counter.touchWith(topping[i])) {
+        if (counter.touchWith(topping[i])) {
             topping.shift();
             alert("HAHA MAJOR L (add game over + retry graphic here)");
             location.reload();
-        }*/
+        }
         if (step >= 10) {
             setTimeout(() => {
                 alert("add level complete graphic here!");
