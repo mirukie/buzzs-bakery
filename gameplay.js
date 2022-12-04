@@ -1,10 +1,13 @@
 var player;
 var toppingPlaceholder = [];
+var stepsCycle = ["assets/steps/step1.PNG", "assets/steps/step2.PNG", "assets/steps/step3.PNG", "assets/steps/step4.PNG",
+                "assets/steps/step5.PNG", "assets/steps/step6.PNG", "assets/steps/step7.PNG", "assets/steps/step8.PNG", 
+                "assets/steps/step9.PNG", "assets/steps/step10.PNG"]
 
 var step = 1;
 
 function startgame() {
-    player = new component(60, 100, "red", 610, 640);
+    player = new component(100, 220, "assets/steps/step1.PNG", 610, 580, "image");
     gameArea.start();
 }
 
@@ -38,8 +41,12 @@ function everyinterval(n) {
     return false;
 }
 
-function component(width, height, color, x, y) {
-    this.gamearea = gameArea;
+function component(width, height, color, x, y, type) {
+    this.type = type;
+    if (type == "image") {
+        this.image = new Image();
+        this.image.src = color;
+    }
     this.width = width;
     this.height = height;
     this.speedX = 0;
@@ -48,8 +55,12 @@ function component(width, height, color, x, y) {
     this.y = y;
     this.update = function () {
         ctx = gameArea.context;
-        ctx.fillStyle = color;
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        if (type == "image") {
+            ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+        } else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
     }
     this.newPos = function () {
         this.x += this.speedX;
@@ -91,7 +102,7 @@ function updateGameArea() {
     gameArea.frameNo += 1;
     if (gameArea.frameNo == 1 || everyinterval(250)) {
         x = Math.random() * 1200;
-        toppingPlaceholder.push(new component(60, 100, "green", x, -150));
+        toppingPlaceholder.push(new component(100, 60, "/assets/toppings/icecream.PNG", x, -150, "image"));
     }
     for (i = 0; i < toppingPlaceholder.length; i += 1) {
         toppingPlaceholder[i].y += 3;
