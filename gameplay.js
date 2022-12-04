@@ -38,8 +38,6 @@ function everyinterval(n) {
     return false;
 }
 
-
-
 function component(width, height, color, x, y) {
     this.gamearea = gameArea;
     this.width = width;
