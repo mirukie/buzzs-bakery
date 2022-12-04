@@ -90,24 +90,28 @@ function updateGameArea() {
     for (i = 0; i < topping.length; i += 1) {
         if (player.touchWith(topping[i])) {
             topping.shift();
-            step++;
-            playerImg = "assets/steps/step" + step + ".png"
-            player.image.src = playerImg;
+            if (step < 10) {
+                step++;
+                playerImg = "assets/steps/step" + step + ".png"
+                player.image.src = playerImg;
+            }
         }
-        if(step >= 10) {
+        if (step >= 10) {
             setTimeout(() => {
                 alert("add level complete graphic here!");
                 return;
-            }, 5000);
+            }, 1000);
         }
     }
-    
+
     gameArea.clear();
     gameArea.frameNo += 1;
-    if (dropped < 10 && gameArea.frameNo == 1 || everyinterval(69)) {
-        dropped++;
-        x = (window.innerWidth / 2) + ((Math.random() - 0.5) * 690);
-        topping.push(new component(100, 60, "/assets/toppings/1_ice.PNG", x, -150, "image"));
+    if (gameArea.frameNo == 1 || everyinterval(69)) {
+        if (dropped < 10) {
+            dropped++;
+            x = (window.innerWidth / 2) + ((Math.random() - 0.5) * 690);
+            topping.push(new component(120, 80, "/assets/toppings/" + dropped + ".PNG", x, -150, "image"));
+        }
     }
     for (i = 0; i < topping.length; i += 1) {
         topping[i].y += 6.9;
