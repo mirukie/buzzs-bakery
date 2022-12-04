@@ -1,13 +1,15 @@
 var player;
-var toppingPlaceholder = [];
+var topping = [];
+
 var stepsCycle = ["assets/steps/step1.PNG", "assets/steps/step2.PNG", "assets/steps/step3.PNG", "assets/steps/step4.PNG",
                 "assets/steps/step5.PNG", "assets/steps/step6.PNG", "assets/steps/step7.PNG", "assets/steps/step8.PNG", 
                 "assets/steps/step9.PNG", "assets/steps/step10.PNG"]
 
 var step = 1;
+var playerImg = "assets/steps/step" + step + ".png"
 
 function startgame() {
-    player = new component(100, 220, "assets/steps/step1.PNG", 610, 580, "image");
+    player = new component(125, 275, playerImg, 610, 580, "image");
     gameArea.start();
 }
 
@@ -88,30 +90,35 @@ function component(width, height, color, x, y, type) {
 
 function updateGameArea() {
     var x;
-    for (i = 0; i < toppingPlaceholder.length; i += 1) {
-        if (player.touchWith(toppingPlaceholder[i])) {
+    for (i = 0; i < topping.length; i += 1) {
+        if (player.touchWith(topping[i])) {
+            topping.shift();
             step++;
-            toppingPlaceholder.shift();
+            playerImg = "assets/steps/step" + step + ".png"
+            player.image.src = playerImg;
+        }
+        if(step >= 10) {
+            setTimeout(() => {
+                alert("add level complete graphic here!");
+                return;
+            }, 5000);
         }
     }
-    if(step > 10) {
-        alert("success!");
-        return;
-    }
+    
     gameArea.clear();
     gameArea.frameNo += 1;
-    if (gameArea.frameNo == 1 || everyinterval(250)) {
-        x = Math.random() * 1200;
-        toppingPlaceholder.push(new component(100, 60, "/assets/toppings/icecream.PNG", x, -150, "image"));
+    if (gameArea.frameNo == 1 || everyinterval(69)) {
+        x = 400 + Math.random() * 400;
+        topping.push(new component(100, 60, "/assets/toppings/icecream.PNG", x, -150, "image"));
     }
-    for (i = 0; i < toppingPlaceholder.length; i += 1) {
-        toppingPlaceholder[i].y += 3;
-        toppingPlaceholder[i].update();
+    for (i = 0; i < topping.length; i += 1) {
+        topping[i].y += 6.9;
+        topping[i].update();
     }
     player.speedX = 0;
     player.speedY = 0;
-    if (gameArea.keys && gameArea.keys[37]) { player.speedX = -6; }
-    if (gameArea.keys && gameArea.keys[39]) { player.speedX = 6; }
+    if (gameArea.keys && gameArea.keys[37]) { player.speedX = -10; }
+    if (gameArea.keys && gameArea.keys[39]) { player.speedX = 10; }
     player.newPos();
     player.update();
 }
