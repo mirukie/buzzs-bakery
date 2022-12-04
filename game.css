@@ -57,23 +57,28 @@
 
 .menubkgd {
     /* background-image: url("assets/menu.PNG"); */
-    height: 850px;
-    width: 650px;
-    position: absolute;
-    top: -150px;
-    margin-left: 425px;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
     margin-right: auto;
+    width: 40%;
+    top: 0;
+    left: 0;
 }
 
 .haloHaloIcon {
     position: relative;
-    margin-left: 550px;
-    margin-right: auto;
-    margin-top: -60px;
-    width: 650px;
-    height: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: 600px;
+    margin-top: -475px;
+    width: 7%;
 }
-
+    
 /* responsive button imgs */
 .responsive {
     width: 50%;
