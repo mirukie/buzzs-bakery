@@ -90,10 +90,15 @@ function updateGameArea() {
     for (i = 0; i < topping.length; i += 1) {
         if (player.touchWith(topping[i])) {
             topping.shift();
-            if (step < 10) {
+            if (step < 11) {
                 step++;
                 playerImg = "assets/steps/step" + step + ".png"
                 player.image.src = playerImg;
+            } else {
+                setTimeout(() => {
+                    alert("add level complete graphic here!");
+                    return;
+                }, 1000);
             }
         }
         if (counter.touchWith(topping[i])) {
@@ -101,18 +106,12 @@ function updateGameArea() {
             alert("HAHA MAJOR L (add game over + retry graphic here)");
             location.reload();
         }
-        if (step >= 10) {
-            setTimeout(() => {
-                alert("add level complete graphic here!");
-                return;
-            }, 1000);
-        }   
     }
 
     gameArea.clear();
     gameArea.frameNo += 1;
     if (gameArea.frameNo == 1 || everyinterval(69)) {
-        if (dropped < 9) {
+        if (dropped < 10) {
             dropped++;
             x = (window.innerWidth / 2) + ((Math.random() - 0.5) * 690);
             topping.push(new component(120, 80, "/assets/toppings/" + dropped + ".PNG", x, -420, "image"));
