@@ -101,7 +101,7 @@ function updateGameArea() {
                 alert("add level complete graphic here!");
                 return;
             }, 1000);
-        }
+        }   
     }
 
     gameArea.clear();
