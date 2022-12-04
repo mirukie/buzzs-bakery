@@ -49,6 +49,13 @@
     background-repeat: no-repeat;
 }
 
+.bakery {
+    background-image: url("assets/bakerybkgd.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .tutbkgd {
     background-image: url("assets/tutorialbkgd.PNG");
     background-size: cover;
