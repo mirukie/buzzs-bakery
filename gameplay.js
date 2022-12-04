@@ -1,5 +1,8 @@
 var player;
 var toppingPlaceholder = [];
+var stepsCycle = ["assets/steps/step1.PNG", "assets/steps/step2.PNG", "assets/steps/step3.PNG", "assets/steps/step4.PNG",
+                "assets/steps/step5.PNG", "assets/steps/step6.PNG", "assets/steps/step7.PNG", "assets/steps/step8.PNG", 
+                "assets/steps/step9.PNG", "assets/steps/step10.PNG"]
 
 var step = 1;
 
