@@ -5,7 +5,7 @@ var step = 1;
 var playerImg = "assets/steps/step" + step + ".png"
 
 function startgame() {
-    player = new component(125, 275, playerImg, window.innerWidth * 0.5, window.innerHeight * 0.6, "image");
+    player = new component(125, 275, playerImg, window.innerWidth * 0.5 - 62.5, window.innerHeight * 0.6, "image");
     counter = new component();
     gameArea.start();
 }
@@ -114,13 +114,13 @@ function updateGameArea() {
         }
     }
     for (i = 0; i < topping.length; i += 1) {
-        topping[i].y += 6.9;
+        topping[i].y += 8;
         topping[i].update();
     }
     player.speedX = 0;
     player.speedY = 0;
-    if (gameArea.keys && gameArea.keys[37]) { player.speedX = -10; }
-    if (gameArea.keys && gameArea.keys[39]) { player.speedX = 10; }
+    if (gameArea.keys && gameArea.keys[37]) { player.speedX = -12; }
+    if (gameArea.keys && gameArea.keys[39]) { player.speedX = 12; }
     player.newPos();
     player.update();
 }
