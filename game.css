@@ -62,6 +62,13 @@
     background-repeat: no-repeat;
 }
 
+.halosuccessbkgd {
+    background-image: url("assets/halosuccessbkgd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .menubkgd {
     /* background-image: url("assets/menu.PNG"); */
     position: absolute;
