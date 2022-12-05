@@ -50,27 +50,27 @@
 }
 
 .bakery {
-    background-image: url("assets/bakerybkgd.png");
+    background-image: url("./assets/bakerybkgd.png");
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .tutbkgd {
-    background-image: url("assets/tutorialBKGD.png");
+    background-image: url("./assets/tutorialBKGD.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .halosuccessbkgd {
-    background-image: url("assets/halosuccessbkgd.png");
+    background-image: url("./assets/halosuccessbkgd.png");
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .halofailbkgd {
-    background-image: url("assets/halofailbkgd.png");
+    background-image: url("./assets/halofailbkgd.png");
     background-size: cover;
     background-repeat: no-repeat;
 
