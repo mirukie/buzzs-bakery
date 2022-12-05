@@ -92,7 +92,6 @@ function updateGameArea() {
         if (player.touchWith(topping[i])) {
             player.image.src = nextPlayerImg;
             step++;
-            playerImg = "assets/steps/step" + step + ".PNG"
             nextPlayerImg = "assets/steps/step" + (step + 1) + ".PNG"
             topping.shift();
         }
