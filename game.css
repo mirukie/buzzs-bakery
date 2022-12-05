@@ -69,6 +69,13 @@
 
 }
 
+.halofailbkgd {
+    background-image: url("assets/halofailbkgd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .menubkgd {
     /* background-image: url("assets/menu.PNG"); */
     position: absolute;
