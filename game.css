@@ -50,14 +50,14 @@
 }
 
 .bakery {
-    background-image: url("assets/bakerybkgd.PNG");
+    background-image: url("assets/bakerybkgd.png");
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .tutbkgd {
-    background-image: url("assets/tutorialbkgd.PNG");
+    background-image: url("assets/tutorialBKGD.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
