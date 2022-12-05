@@ -98,13 +98,14 @@ function updateGameArea() {
         }
         if (counter.touchWith(topping[i])) {
             topping.shift();
-            alert("HAHA MAJOR L (add game over + retry graphic here)");
+            alert("HAHA MAJOR L! Click ok to try again :(");
             location.reload();
         } 
     }
     if (step >= 10) {
         setTimeout(() => {
-            alert("add level complete graphic here!");
+            // alert("add level complete graphic here!");
+            location.href = "endScreen.html";
             return;
         }, 1000);
     }  
