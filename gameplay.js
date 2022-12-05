@@ -2,7 +2,7 @@ var player;
 var topping = [];
 var dropped = 0;
 var step = 1;
-var playerImg = "assets/steps/step" + step + ".png"
+var playerImg = "assets/steps/step" + step + ".PNG"
 
 function startgame() {
     player = new component(125, 275, playerImg, window.innerWidth * 0.5 - 62, window.innerHeight * 0.6, "image");
@@ -92,7 +92,7 @@ function updateGameArea() {
             topping.shift();
             if (step < 10) {
                 step++;
-                playerImg = "assets/steps/step" + step + ".png"
+                playerImg = "assets/steps/step" + step + ".PNG"
                 player.image.src = playerImg;
             }
         }
