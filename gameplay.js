@@ -98,8 +98,7 @@ function updateGameArea() {
         }
         if (counter.touchWith(topping[i])) {
             topping.shift();
-            alert("HAHA MAJOR L! Click ok to try again :(");
-            location.reload();
+            location.href = "gameOver.html";
         } 
     }
     if (step >= 10) {
