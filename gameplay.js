@@ -3,6 +3,7 @@ var topping = [];
 var dropped = 0;
 var step = 1;
 var playerImg = "assets/steps/step" + step + ".PNG"
+var nextPlayerImg = "assets/steps/step" + (step + 1) + ".PNG"
 
 function startgame() {
     player = new component(125, 275, playerImg, window.innerWidth * 0.5 - 62, window.innerHeight * 0.6, "image");
@@ -89,12 +90,11 @@ function updateGameArea() {
     var x;
     for (i = 0; i < topping.length; i += 1) {
         if (player.touchWith(topping[i])) {
+            player.image.src = nextPlayerImg;
+            step++;
+            playerImg = "assets/steps/step" + step + ".PNG"
+            nextPlayerImg = "assets/steps/step" + (step + 1) + ".PNG"
             topping.shift();
-            if (step < 10) {
-                step++;
-                playerImg = "assets/steps/step" + step + ".PNG"
-                player.image.src = playerImg;
-            }
         }
         if (counter.touchWith(topping[i])) {
             topping.shift();
