@@ -57,7 +57,7 @@
 }
 
 .tutbkgd {
-    background-image: url("./assets/tutorialBKGD.png");
+    background-image: url("assets/tutbkgd.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
