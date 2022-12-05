@@ -6,3 +6,10 @@ Here you explore Filipino culture in Buzz's Bakery; maybe in the future we'll co
 add more levels exploring other Asian cultures!
 
 All music, design, and code was made personally by our team. We hope you enjoy <3
+
+Made by:
+Jocelyn Le 
+Emmaly Nguyen
+Rachel Weng
+Steven Yang
+Ethan Zhao
