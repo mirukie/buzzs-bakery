@@ -11,13 +11,13 @@
 .text {
     text-align: center;
     font-family: 'Fredoka One';
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .smallText {
     text-align: center;
     font-family: 'Fredoka One';
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .buttonCenter {
