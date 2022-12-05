@@ -99,15 +99,12 @@ function updateGameArea() {
         if (counter.touchWith(topping[i])) {
             topping.shift();
             location.href = "gameOver.html";
-        } 
+        }
     }
     if (step >= 10) {
-        setTimeout(() => {
-            // alert("add level complete graphic here!");
-            location.href = "endScreen.html";
-            return;
-        }, 1000);
-    }  
+        location.href = "endScreen.html";
+        return;
+    }
 
     gameArea.clear();
     gameArea.frameNo += 1;
