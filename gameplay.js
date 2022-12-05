@@ -112,7 +112,7 @@ function updateGameArea() {
         if (dropped < 9) {
             dropped++;
             x = (window.innerWidth / 2) + ((Math.random() - 0.5) * 690);
-            topping.push(new component(120, 80, "/assets/toppings/" + dropped + ".PNG", x, -420, "image"));
+            topping.push(new component(120, 80, "assets/toppings/" + dropped + ".PNG", x, -420, "image"));
         }
     }
     for (i = 0; i < topping.length; i += 1) {
